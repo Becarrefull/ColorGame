@@ -5,11 +5,29 @@ function randomRGB (){
   return "(" + randomNum() + "," + randomNum() + "," + + randomNum() + ")";
 }
 
-var colorCase = document.querySelectorAll('.colorCase');
-
-
-
-
-for (var i=0 ; i<colorCase.length ; i++){
-  colorCase[i].style.backgroundColor = "rgb" + randomRGB();
+function modifyRgbCase(){
+  for (var i=0 ; i<level ; i++){
+    colorCase[i].style.backgroundColor = "rgb" + randomRGB();
+  }
 }
+
+var level = 6;
+var colorCase = document.querySelectorAll('.colorCase');
+var newGame = document.getElementById('newGame');
+var levelEasy = document.getElementById('easy');
+var levelHard = document.getElementById('hard');
+var row2 = document.getElementById('row2')
+
+levelEasy.addEventListener('click', function(){
+  level = 3;
+  row2.style.display = "none";
+  modifyRgbCase();
+})
+
+levelHard.addEventListener('click', function(){
+  level = 6;
+  row2.style.display = "block";
+  modifyRgbCase();
+})
+
+newGame.addEventListener('click', modifyRgbCase)

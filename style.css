@@ -38,16 +38,19 @@ p{
   display:flex;
 }
 
-#levelMenu h3{
+#gameMenu h3{
   margin: 0 10px;
+  cursor: pointer;
 }
+
+
 
 #game{
   height: 72%;
   background-color: #444;
 }
 
-.row{
+#row, #row2{
   padding-top: 30px;
   margin: 0 auto;
   max-width: 500px;
