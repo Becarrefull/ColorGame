@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+}
+
+h2{
+  margin: 20px auto;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+}
+
+p{
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+#header{
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: aqua;
+}
+
+#gameMenu{
+  height: 3%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#levelMenu{
+  display:flex;
+}
+
+#levelMenu h3{
+  margin: 0 10px;
+}
+
+#game{
+  height: 72%;
+  background-color: #444;
+}
+
+.row{
+  padding-top: 30px;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.colorCase{
+  height: 120px;
+  width: 28%;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 5px 5px;
+  background-color: aqua;
+
+}
